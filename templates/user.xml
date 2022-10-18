@@ -1,0 +1,38 @@
+<templateSet group="user">
+  <template name="th" value="${({theme})=&gt;$END$}" description="" toReformat="true" toShortenFQNames="true">
+    <context>
+      <option name="CSS_PROPERTY_VALUE" value="true" />
+    </context>
+  </template>
+  <template name="if" value="if ($END$) {&#10;  }" description="" toReformat="true" toShortenFQNames="true">
+    <context>
+      <option name="JS_STATEMENT" value="true" />
+      <option name="TS_STATEMENT" value="true" />
+    </context>
+  </template>
+  <template name="ucb" value="useCallback(() =&gt; {&#10;    $END$&#10;  }, []);" description="" toReformat="true" toShortenFQNames="true">
+    <context>
+      <option name="JS_STATEMENT" value="true" />
+      <option name="TS_STATEMENT" value="true" />
+    </context>
+  </template>
+  <template name="usm" value="useMemo(() =&gt; $END$, []);" description="" toReformat="true" toShortenFQNames="true">
+    <context>
+      <option name="JS_STATEMENT" value="true" />
+      <option name="TS_STATEMENT" value="true" />
+    </context>
+  </template>
+  <template name="use" value="useEffect(()=&gt;{&#10;    $END$&#10;  },[])" description="" toReformat="true" toShortenFQNames="true">
+    <context>
+      <option name="JS_STATEMENT" value="true" />
+      <option name="TS_STATEMENT" value="true" />
+    </context>
+  </template>
+  <template name="ricon" value="import React from 'react';&#10;import SVG from '@bit/livingpackets.frontend-react.svg';&#10;import { withTheme } from 'styled-components';&#10;import { IIcon } from 'dashboardv2/components/atoms/models/icon';&#10;&#10;const $componentName$ = ({&#10;  theme,&#10;  fill = theme.colors.$END$,&#10;  width = '1.5em',&#10;  height = '1.5em',&#10;  viewBox = '0 0 24 24',&#10;}: IIcon) =&gt; {&#10;  return (&#10;    &lt;SVG width={width} height={height} viewBox={viewBox}&gt;&#10;        &#10;    &lt;/SVG&gt;&#10;  );&#10;};&#10;&#10;export default withTheme($componentName$);&#10;" description="Icon" toReformat="false" toShortenFQNames="true">
+    <variable name="componentName" expression="" defaultValue="MyIcon" alwaysStopAt="true" />
+    <context>
+      <option name="JAVA_SCRIPT" value="true" />
+    </context>
+  </template>
+  <template name="clsx" value="import clsx from 'clsx'" description="" toReformat="false" toShortenFQNames="true" />
+</templateSet>
