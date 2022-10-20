@@ -21,6 +21,9 @@
   <action id="CloseActiveTab">
     <keyboard-shortcut first-keystroke="alt c" />
   </action>
+  <action id="CloseAllEditors">
+    <keyboard-shortcut first-keystroke="shift meta w" />
+  </action>
   <action id="CompareTwoFiles">
     <keyboard-shortcut first-keystroke="shift meta d" />
   </action>
