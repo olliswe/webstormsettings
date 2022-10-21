@@ -47,6 +47,7 @@
   <action id="EditorSelectWord" />
   <action id="FileChooser.GotoModule" />
   <action id="FileChooser.GotoProject" />
+  <action id="FileChooser.TogglePathBar" />
   <action id="FindNext">
     <keyboard-shortcut first-keystroke="ctrl g" />
   </action>
@@ -88,6 +89,7 @@
     <keyboard-shortcut first-keystroke="ctrl alt o" />
     <keyboard-shortcut first-keystroke="meta o" />
   </action>
+  <action id="ParameterInfo" />
   <action id="PreviousTab">
     <keyboard-shortcut first-keystroke="alt left" />
   </action>
@@ -97,6 +99,10 @@
     <keyboard-shortcut first-keystroke="f2" />
   </action>
   <action id="RecentFiles" />
+  <action id="ReformatWithPrettierAction">
+    <keyboard-shortcut first-keystroke="shift meta alt p" />
+    <keyboard-shortcut first-keystroke="meta p" />
+  </action>
   <action id="SelectNextOccurrence">
     <keyboard-shortcut first-keystroke="meta g" />
   </action>
